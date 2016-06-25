@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/global.css"  />
+<link rel="stylesheet" href="../css/user.css"  />
+<title>登录</title>
+</head>
+
+
+<body>
+
+<div class="contact">
+<div class="cb" style="margin-top:150px;"></div>
+
+<div class="form_div">
+<div class="title">登&nbsp;录</div>
+<form action="login_r.php?url=<?php echo $url; ?>" method="post">
+
+<div class="form_title">用户名</div>
+<div class="form_txt_box">
+<input type="text" name="uname" class="txt" autocomplete="off"/>
+</div>
+
+<div class="form_title">密码</div>
+<div class="form_txt_box">
+<input type="text" name="upsw" class="txt" autocomplete="off"/>
+</div>
+
+<div class="mt10"><input type="checkbox" name="autologin"/><span class="fs20">自动登录</span></div>
+
+<div class="form_jg"></div>
+
+<input type="submit" class="form_s_btn btn" value="登 录" />
+</form>
+
+</div>
+</div><!--contact-->
+</body>
+</html>

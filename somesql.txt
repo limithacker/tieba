@@ -1,0 +1,14 @@
+select (SELECT COUNT(*) from rties where tid=b.tid) as 'rnum',a.uname,b.time,b.title,b.tietxt from users a,ties b where a.uid=b.uid ORDER BY b.tid DESC
+
+
+<!--tie-->
+<div class="tie">
+
+<span class="t1">12</span>
+<span class="t2"><a class="tie_title" href="javascript:;">话说梦</a></span>
+<a href="javascript:;" class="t3">阪元流水子</a>
+<span class="t4">12-08</span>
+<div class="t5">我长这么大第一次对药物有如此大的依赖和感谢，简直犹如神助。我长这么大第一次对药物有如此大的依赖和感谢，简直犹如神助。我长这么大第一次对药物有如此大的依赖和感谢，简直犹如神助。</div>
+
+</div>
+<!--tie-->

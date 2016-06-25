@@ -1,0 +1,76 @@
+@charset "utf-8";
+body {font-size:16px; font-family:"microsoft yahei",tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;}
+input {font-family:"microsoft yahei",tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;}
+
+/* 首页 */
+.body {background-color:#DCEFFE;}
+.contact {width:1000px; margin:0 auto; background-color:#F3F5F8;} 
+
+.cardbox {width:998px; height:90px; background-color:#F3F5F8; margin-top:198px; border:1px solid #E9EBF0;}
+.tieba_icon { width:150px; height:150px; padding:4px; margin-top:-85px;  background-color:#FFF; border:1px solid #DADCDF;}
+
+.cardtitle {  height:40px;}
+.cardtitle_a { font-size:22px; text-decoration:none; color:#333;}
+.cardinfo {color:#4C4C4C; height:20px;}
+
+.tiebox {width:739px; border-left:1px solid #E9EBF0; min-height:1000px; background-color:#FFF;}
+.right_box { width:260px; }
+
+/*indexformdiv*/
+
+.indexformdiv { padding:20px 0px 50px 0px;;}
+#ttitle { margin:0px 0px -1px 0px; height:40px; line-height:40px; font-size:20px; width:978px; padding-left:20px; border:1px solid #999999;}
+#ftbtn { margin-top:-1px; width:1000px; border:1px solid #999999; height:40px; line-height:40px; font-size:20px; color:#999; cursor:pointer;}
+#ftbtn:hover {  background-color:#999999; transition:background-color linear .5s; color:#FFF;}
+.etip { height:20px; font-size:16px; color:#FF0000;}
+
+/*分页*/
+.fybox { width:90%; padding-right:10%; height:30px; line-height:30px; text-align:right; margin-top:20px; }
+.fybox a { color:#999; font-size:24px; padding:0px 5px; height:30px; display:inline-block; text-align:center; text-decoration:none;}
+.fybox a:hover { color:#FFF; background-color:#999999; transition:background-color linear .5s }
+.fybox a.hover { color:#FFF; background-color:#999999;}
+
+/*帖子页面*/
+
+.tielist { background-color:#F5F7FA;}
+.tietitle { width:968px; padding-left:30px; height:50px; line-height:50px; font-size:20px; background-color:#F3F5F8; border:1px solid #E9EBF0; border-top:none; position:relative;}
+.rtieformdiv { padding:20px 0px 50px 0px;;}
+#col_btn { width:70px; height:25px; line-height:25px; text-align:center;  font-size:14px; color:#3879D9; border:1px solid #3879D9; text-decoration:none; position:absolute; right:30px; top:13px; z-index:1; }
+#col_btn:hover { color:#FFF; background-color:#3879D9; transition:background-color 0.3s linear;}
+
+/* 单个帖子 */
+
+.tie {width:719px; height:70px; padding-left:20px; border-bottom:1px dotted #DBDBDB; }
+.tie:hover { background-color:#F7F9FC; transition:background-color 0.3s linear;}
+
+.tie span,.tie a { display:inline-block; }
+
+.t1 { width:53px; height:23px; line-height:23px; text-align:center; color:#666; border:1px solid #EBEBEB; background-color:#F7F7F7; border-radius:2px; font-family:Arial; font-size:12px; vertical-align:middle;}
+
+.t2 {width:430px; padding-left:20px; height:35px; line-height:35px;vertical-align:middle;}
+.t2 a { font-size:16px; color:#2D64B3; text-decoration:none; }
+.t2 a:hover { text-decoration:underline;} 
+
+.t3 { color:#999999; text-decoration:none; font-size:14px; width:110px; height:35px; line-height:35px; vertical-align:middle;}
+.t3 { text-decoration:none;}
+
+.t4 {color:#999999;font-size:14px; height:25px; width:70px; height:35px; line-height:35px;vertical-align:middle;}
+
+.t5 { width:590px; padding-left:80px; color:#666666; font-size:14px; white-space:nowrap; overflow:hidden;text-overflow:ellipsis; height:35px; line-height:35px; clear:both;}
+
+/*单个回帖*/
+
+.rtie {border-bottom:1px solid #E1E4E6; border-left:1px solid #E1E4E6; border-right:1px solid #E1E4E6;}
+
+.rtiel { width:129px; float:left; text-align:center; min-height:300px;}
+.rtiel img.t1,.rtiel img.t2,.rtiel img.t3 { display:block; margin:12px auto 0px auto; width:100px; }
+.rtiel img.t1 { height:100px;}
+.rtiel img.t2 { height:100px; border-radius:50%;}
+.rtiel img.t3 { width:100px; height:200px;}
+.rtiel span { line-height:40px;}
+
+.rtier { background-color:#FFF; width:869px; min-height:300px; float:left;}
+.rtier .txt { width:830px; margin:20px auto; min-height:220px; }
+.rtier .txt embed { display:block;}
+.rtier .txt img { max-width:830px;}
+.rtier .time { width:800px; height:40px; line-height:40px; color:#999; font-size:14px; text-align:right;}

@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/global.css"  />
+<link rel="stylesheet" href="../css/user.css"  />
+<title>注册</title>
+</head>
+
+
+<body>
+<?php   require("header.html"); ?>
+
+<div class="contact">
+<div class="cb mt30"></div>
+<div class="set_div">
+<form action="set_r.php?url=<?php echo $url; ?>" method="post">
+
+
+<div class="title">设&nbsp;置</div>
+
+<div class="form_title set_info">
+<span>uid:<?php echo $uid;?></span>
+<span>用户名:<?php echo $uname;?></span>
+<span>用户组:<?php echo $urighttxt;?></span>
+
+</div>
+
+
+<div class="form_title">原密码</div>
+<div class="form_txt_box">
+<input type="text" name="upsw" class="txt" autocomplete="off"/>
+</div>
+
+<div class="form_title">新密码</div>
+<div class="form_txt_box">
+<input type="text" name="nupsw" class="txt" autocomplete="off"/>
+</div>
+
+<div class="form_title">设置头像</div>
+<div class="form_txt_box">
+<input type="text" id="headshow" name="headshow" class="txt" value="<?php echo $uheadshow;?>" autocomplete="off"/>
+</div>
+
+<a href="http://tietuku.com/upload" target="_blank" class="set_btn btn">上传图片</a>
+
+<a href="javascript:;" class="set_btn btn" id="set_btn">查看效果</a>
+
+<div class="mt30">
+<div class="imgli">
+<img src="<?php echo $uheadshow;?>" class="t1" />
+<span>正常头像</span>
+</div>
+<div class="imgli">
+<img src="<?php echo $uheadshow;?>" class="t2" />
+<span>圆形头像</span>
+</div>
+<div class="imgli">
+<img src="<?php echo $uheadshow;?>" class="t3" />
+<span>长头像</span>
+</div>
+</div>
+
+<div class="cb"></div>
+
+<div class="form_title">设置头像效果&nbsp;当前:<?php echo $hst;?></div>
+
+<div class="selbox headshowtype">
+<span sel="1" id="hst1">正常头像</span>
+<span sel="2" id="hst2">圆形头像</span>
+<span sel="3" id="hst3">长头像</span>
+</div>
+
+<input type="hidden" id="hst" name="hst" value="<?php echo $hst;?>" />
+
+<div class="form_title">设置是否公开个人动态&nbsp;当前:<?php echo $dttxt;?></div>
+
+<div class="selbox dttype">
+<span sel="1" id="dt1">是</span>
+<span sel="0" id="dt0">否</span>
+</div>
+
+<input type="hidden" id="dt" name="dt" value="<?php echo $dt;?>" />
+
+<div class="form_jg"></div>
+
+<input type="submit" class="form_s_btn btn" value="保 存" />
+</form>
+
+</div>
+
+
+<div class="cb mt30"></div>
+
+</div><!--contact-->
+</body>
+
+
+<script src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+if (!window.jQuery) { 
+var script = document.createElement('script');
+script.src = "../js/jquery-1.8.3.min.js";
+document.body.appendChild(script);}
+</script>
+
+
+<script type="text/javascript" src="../js/set.js"></script>
+</html>

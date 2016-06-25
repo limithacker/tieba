@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>水吧-英雄联盟ALLSTAR专题页面</title>
+<link rel="stylesheet" href="../css/global.css" />
+<link rel="stylesheet" href="../css/live.css" />
+</head>
+
+<body>
+<?php   require("header.html"); ?>
+
+<div class="rightbox">
+<div class="h30"></div>
+
+</div>
+
+
+<div class="leftbox">
+<div class="h30"></div>
+<div class="livetab">
+<a href="javascript:live(lives[0]);" livenum="0">腾讯超清</a>
+<a href="javascript:live(lives[1]);" livenum="1">斗鱼</a>
+
+</div>
+</div>
+
+
+
+<div class="livediv">
+<div id="livebox"></div>
+<div id="tcbox"></div>
+</div>
+
+
+
+</body>
+
+
+
+<script src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+if (!window.jQuery) { 
+var script = document.createElement('script');
+script.src = "../js/jquery-1.8.3.min.js";
+document.body.appendChild(script);}
+</script>
+<script>
+  var lives=new Array('<embed wmode="opaque" flashvars="vid=100600603&amp;loadingswf=http://imgcache.qq.com/minivideo_v1/vd/res/skins/longzhu_loading.swf&amp;vurl=http://zb.v.qq.com:1863/?progid=100600603&amp;sktype=live&amp;funCnlInfo=TenVideo_FlashLive_GetChannelInfo&amp;funTopUrl=TenVideo_FlashLive_GetTopUrl&amp;funLogin=TenVideo_FlashLive_IsLogin&amp;funOpenLogin=TenVideo_FlashLive_OpenLogin&amp;funSwitchPlayer=TenVideo_FlashLive_SwitchPlayer&amp;txvjsv=2.0&amp;showcfg=1&amp;share=1&amp;full=1&amp;autoplay=1&amp;p=true" src="http://imgcache.qq.com/minivideo_v1/vd/res/TencentPlayerLive.swf?max_age=86400&amp;v=100600603" quality="high" name="tenvideo_flash_player_1429855293134" id="tenvideo_flash_player_1429855293134" bgcolor="#000000" width="100%" height="100%" align="middle" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" pluginspage="http://get.adobe.com/cn/flashplayer/" />','<embed width="100%" height="100%" allownetworking="all" allowscriptaccess="always" src="http://staticlive.douyutv.com/common/share/play.swf?room_id=288016" quality="high" bgcolor="#000" wmode="transparent" allowfullscreen="true" allowFullScreenInteractive="true" type="application/x-shockwave-flash">');
+
+  
+  $(function(){
+	  live(lives[0]);
+  });
+
+
+</script>
+
+<script type="text/javascript" src="../js/live.js"></script>
+</html>
